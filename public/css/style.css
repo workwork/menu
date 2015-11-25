@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "PressStart2P";
+  src: url("../fonts/PressStart2P.ttf"); }
+
+@font-face {
+  font-family: "StarWarsHollow";
+  src: url("../fonts/Starjhol.ttf"); }
+
+body {
+  padding: 0;
+  padding-top: 10vh;
+  margin: 0;
+  width: 100vw;
+  color: white;
+  font: 24px "PressStart2P", Helvetica, Arial, sans-serif;
+  background-image: url("../img/pixel_art_galaxy.png"); }
+
+h1#menuTitle {
+  font-family: "StarWarsHollow";
+  color: #e5b13a; }
+
+a {
+  color: #00B7FF; }
+
+div.padder {
+  margin: 0 auto;
+  width: 90vw; }
+
+a.viewable {
+  text-decoration: none; }
+
+h1.title {
+  color: white;
+  text-shadow: 1px 0 0 #444, 0 -1px 0 #444, 0 1px 0 #444, -1px 0 0 #444;
+  text-decoration: none;
+  margin-top: -60px;
+  margin-left: 10px; }
+
+img.banner {
+  width: 600px; }
+
+ul#titlecontent {
+  width: 100vw; }
+
+ul#titlecontent li {
+  font-size: 88px;
+  line-height: 160px; }
+
+ul#titlecontent li span {
+  float: right; }
+
+#titles {
+  position: absolute;
+  width: 100vw;
+  height: 50em;
+  bottom: 0;
+  left: 0vw;
+  font-size: 350%;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(25deg); }
+
+#titlecontent {
+  position: absolute;
+  top: 100%;
+  animation: scroll 100s linear 4s infinite; }
+
+@keyframes scroll {
+  0% {
+    top: 100%; }
+  100% {
+    top: -170%; } }

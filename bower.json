@@ -1,0 +1,9 @@
+{
+  "name": "example-node-p-p-search",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

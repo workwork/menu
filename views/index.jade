@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1#menuTitle= title
+	#titles
+		ul#titlecontent
+			for item in menuItems
+				li=item.name
+					span #{item.price},-
