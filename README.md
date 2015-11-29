@@ -62,7 +62,7 @@ block css
 
 ###4. Create a pull request to this repo
 
-When the PR is approoved you will see your menu theme appear at the screens in our bar
+When the PR is approved you will see your menu theme appear at the screens in our bar
 
 
 
