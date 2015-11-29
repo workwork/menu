@@ -1,6 +1,16 @@
 #Work-Work Menu
 This is the menu system used at the Work-Work bar to show what items we have available for sale.
 
+###Setup
+
+Run `npm install`
+
+###Starting the system
+
+Run the command `gulp`
+
+Go to [`http://localhost:3000/`](http://localhost:3000/)
+
 ##Creating a new theme
 If you want to create a new theme, you need to do the following. 
 
