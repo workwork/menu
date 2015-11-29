@@ -14,13 +14,14 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function() {
   gulp.watch('./public/css/*.scss', ['sass']);
+  gulp.watch('./prices.txt', ['sass']);
 });
 
 gulp.task('develop', function () {
   livereload.listen();
   nodemon({
     script: 'bin/www',
-    ext: 'js jade coffee',
+    ext: 'js jade coffee prices',
     stdout: false
   }).on('readable', function () {
     this.stdout.on('data', function (chunk) {

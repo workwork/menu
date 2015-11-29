@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "StarWarsHollow";
+    src: url("../fonts/Starjhol.ttf");
+}
+
+
+body {
+  padding: 0;
+  padding-top: 10vh;
+  margin: 0;
+  width: 100vw;
+  color: white;
+  font: 24px "PressStart2P", Helvetica, Arial, sans-serif;
+  background-image: url("../img/pixel_art_galaxy.png");
+}
+
+h1.menuTitle{
+  font-family: "StarWarsHollow", Helvetica, Arial, sans-serif;
+  color: rgb(229, 177, 58);
+  text-align: center;
+  font-size: 150px;
+  height: 20px;
+}
+div#menuWrapper{
+  top: -100px;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  margin: 0;
+}
+a {
+  color: #00B7FF;
+}
+
+
+h1.title{
+  color: white;
+  text-shadow: 1px 0 0 #444, 0 -1px 0 #444, 0 1px 0 #444, -1px 0 0 #444;
+  text-decoration: none;
+  margin-top: -60px;
+  margin-left: 10px;
+}
+
+
+ul#titlecontent{
+  width: 100vw;
+  // list-style-type: square;
+  list-style-type: none;
+}
+ul#titlecontent li{
+  font-size: 60px;
+  line-height: 160px;
+}
+ul#titlecontent li span{
+  float: right;
+}
+
+
+#titles
+{
+  position: absolute;
+  width: 100vw;
+  height: 50em;
+  bottom: 0;
+  left: 0vw;
+  // margin-left: -9em;
+  font-size: 250%;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  z-index: -1;
+  transform: perspective(300px) rotateX(20deg);
+}
+
+#titlecontent
+{
+  position: absolute;
+  top: 90%;
+  animation: scroll 40s linear infinite;
+
+}
+
+@keyframes scroll {
+  0% { top: 90%; }
+  95% { top: -10%; }
+  100% { top: 90%; }
+}
