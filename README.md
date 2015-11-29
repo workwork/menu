@@ -37,6 +37,14 @@ ul
 
 Put all of you [`scss`](http://sass-lang.com/guide) styles within this file.
 
+In your `jade` file, include the compiled css file:
+
+```jade
+extends layout
+
+block css
+	link(rel='stylesheet', href='/css/mynewtheme.css')
+```
 
 ###4. Create a pull request to this repo
 
