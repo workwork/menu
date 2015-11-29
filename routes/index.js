@@ -28,7 +28,7 @@ function refreshPrices () {
 refreshPrices();
 
 router.get('/', function(req, res) {
-	res.render('starwars', { title: 'Work-Work', menuItems: menuItems});
+	res.render('index', { title: 'Work-Work', menuItems: menuItems});
 });
 
 router.get('/starwars', function(req, res) {
