@@ -27,7 +27,7 @@ router.get('/mynewtheme', function(req, res) {
 
 ```
 
-The "menuItems" object contains a list of all menu items available. It's format is `[{name: "item1", price: "12"}, {name: "item2", price: "12"}, ...]`
+The `menuItems` object contains a list of all menu items available. It's format is `[{name: "item1", price: "12"}, {name: "item2", price: "12"}, ...]`
 
 ###2. Create `./views/mynewtheme.jade`
 
