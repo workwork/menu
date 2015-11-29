@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  padding-top: 10vh;
+  margin: 0;
+  width: 100vw;
+  color: white;
+  font: 24px "PressStart2P", Helvetica, Arial, sans-serif;
+  background-image: url("../img/pixel_art_galaxy.png"); }
+
+h1.menuTitle {
+  font-family: "PressStart2P", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  height: 20px; }
+
+div#menuWrapper {
+  top: 0px;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  margin: 0; }
+
+a {
+  color: #00B7FF; }
+
+ul#titlecontent {
+  margin: 0 auto;
+  margin-top: 5vw;
+  width: 70vw;
+  list-style-type: none; }
+
+ul#titlecontent li {
+  font-size: 30px;
+  line-height: 40px; }
+
+ul#titlecontent li span {
+  float: right; }
