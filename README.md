@@ -36,10 +36,13 @@ This is where the html file is generated using [`jade`](http://jade-lang.com/).
 To create a simple list of all the menu items with their prices.
 
 ```jade
-ul
-	for item in menuItems
-		li=item.name
-			span(style="float: right;") #{item.price},-
+extends layout
+
+block content
+	ul
+		for item in menuItems
+			li=item.name
+				span(style="float: right;") #{item.price},-
 ```
 
 
@@ -54,6 +57,7 @@ extends layout
 
 block css
 	link(rel='stylesheet', href='/css/mynewtheme.css')
+//- ...
 ```
 
 ###4. Create a pull request to this repo
