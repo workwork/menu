@@ -1,5 +1,5 @@
 {
-  "name": "example-node-p-p-search",
+  "name": "example-node-work-work-menu",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,7 +12,6 @@
     "jade": "^1.11.0",
     "morgan": "^1.6.1",
     "node-sass": "^3.4.2",
-    "pp-search-api": "file:../PP-search-api",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
@@ -23,7 +22,7 @@
     "gulp-plumber": "^1.0.0"
   },
   "scripts": {
-    "dockerstart": "docker run -d -p 3000:3000 --link elasticsearch --name work-work-menu ", //send in -- ID_OF_CONTAINER
-    "dockersend": "docker save work-work-menu | bzip2 | pv | ssh root@ppsearch.me 'bunzip2 | docker load'"
+    "dockerstart": "docker run -d -p 3000:3000 --name work-work-menu ", //send in -- ID_OF_CONTAINER
+    "dockersend": "docker save work-work-menu | bzip2 | pv | ssh root@workworkmenu.me 'bunzip2 | docker load'"
   }
 }

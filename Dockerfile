@@ -20,7 +20,6 @@ RUN set -x \
 
 # App
 ADD . /src
-# ADD ../PP-search-api /PP-search-api
 
 #Install Gulp
 RUN npm install gulp -g
