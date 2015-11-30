@@ -22,7 +22,7 @@
     "gulp-plumber": "^1.0.0"
   },
   "scripts": {
-    "dockerstart": "docker run -d -p 3000:3000 --name work-work-menu ", //send in -- ID_OF_CONTAINER
+    "dockerstart": "docker run -d -p 3000:3000 --name work-work-menu ", 
     "dockersend": "docker save work-work-menu | bzip2 | pv | ssh root@workworkmenu.me 'bunzip2 | docker load'"
   }
 }
