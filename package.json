@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "dockerstart": "docker run -d -p 3000:3000 --name work-work-menu ",
+    "dockersend": "docker save work-work-menu | bzip2 | pv | ssh root@workworkmenu.me 'bunzip2 | docker load'",
+    "start": "node --harmony `which gulp`"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
@@ -20,9 +22,5 @@
     "gulp-nodemon": "^2.0.2",
     "gulp-livereload": "^3.8.0",
     "gulp-plumber": "^1.0.0"
-  },
-  "scripts": {
-    "dockerstart": "docker run -d -p 3000:3000 --name work-work-menu ", 
-    "dockersend": "docker save work-work-menu | bzip2 | pv | ssh root@workworkmenu.me 'bunzip2 | docker load'"
   }
 }

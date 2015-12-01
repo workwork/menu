@@ -11,8 +11,9 @@ function refreshPrices () {
 	if (err) {
 		return console.log(err);
 	}
-	for(line of data.split("\n")){
-		price_data = line.split(" | ")
+	lines = data.split("\n")
+	for(line in lines){
+		price_data = lines[line].split(" | ")
 		menuItems.push({name: price_data[0], price: price_data[1] })
 	}
 	console.log(menuItems);

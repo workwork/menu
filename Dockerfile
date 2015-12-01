@@ -34,6 +34,7 @@ WORKDIR "/src"
 
 # Install app dependencies
 RUN npm install
+RUN npm install -g npm
 RUN npm rebuild node-sass
 
-CMD ["gulp"]
+CMD ["npm", "start"]
